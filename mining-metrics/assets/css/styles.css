@@ -237,6 +237,11 @@ header .start-now a {
   overflow-y: auto;
 }
 
+@media all and (min-width: 1080px) {
+  .balloon-login.cadastro {
+    margin-top: 70px;
+  }
+}
 @media all and (max-width: 1080px) {
   .balloon-login.cadastro {
     width: 100%;
