@@ -35,7 +35,13 @@
                     </div>
                   </div>
                   <div class="col-auto hide-on-mobile">
-                    <div class="language"><a class="d-flex" href="#footer"><img class="mx-2" src="./assets/images/HEADER/ICON-GLOBO.svg">PT</a></div>
+                    <div class="language position-relative"><a class="d-flex" href="#" onclick="closeAll(); showLanguagesList()"><img class="mx-2" src="./assets/images/HEADER/ICON-GLOBO.svg"><strong class="m-0">PT</strong></a>
+                      <ul class="list-language" id="list-language">
+                        <li><a href="#" title="Engligh">Eng</a></li>
+                        <li><a href="#" title="Deutsch">DE</a></li>
+                        <li><a href="#" title="Español">Esp</a></li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -48,7 +54,7 @@
                     </div>
                   </div>
                   <div class="col-auto hide-on-mobile">
-                    <div class="start-now"><a href="#" onclick="closeAll(); start();">COMEÇAR AGORA →</a></div>
+                    <div class="start-now"><a class="d-flex gap-2 align-items-center" href="#" onclick="closeAll(); start();">COMEÇAR AGORA<img src="./assets/images/HEADER/ICON-ARROW2.svg"></a></div>
                   </div>
                 </div>
               </div>
@@ -67,48 +73,63 @@
       </div>
       <div class="menu-mobile" id="login-mobile">
         <div class="row align-items-center justify-content-between">
-          <div class="col-auto"><a href="#footer"><img class="mx-2" src="./assets/images/HEADER/ICON-GLOBO2.svg">PT</a></div>
-          <div class="col-auto">
+          <div class="col-auto p-0"><a href="#footer"><img class="mx-2" src="./assets/images/HEADER/ICON-GLOBO2.svg">PT</a></div>
+          <div class="col-auto p-0">
             <button onclick="closeAll()"><img class="mx-2" src="./assets/images/HEADER/x-white.svg"></button>
           </div>
         </div>
-        <div class="row">
-          <div class="col"><img class="d-block m-auto" src="./assets/images/HEADER/logo-white.svg"></div>
-        </div>
-        <div class="row">
+        <div class="row flex-column">
           <div class="col">
-            <form>
-              <input class="w-100" required type="email" placeholder="E-mail">
-              <input class="w-100" required type="password" placeholder="Senha">
-              <input class="w-100" type="submit" value="Entrar">
-            </form>
-            <p class="text-center"><a href="#">Esqueceu a senha?</a></p>
+            <div class="row">
+              <div class="col"><img class="d-block m-auto" src="./assets/images/HEADER/logo-white.svg"></div>
+            </div>
           </div>
+          <div class="col">
+            <div class="row">
+              <div class="col">
+                <form>
+                  <input class="w-100" required type="email" placeholder="E-mail">
+                  <input class="w-100" required type="password" placeholder="Senha">
+                  <input class="w-100" type="submit" value="Entrar">
+                </form>
+                <p class="text-center m-0"><a href="#">Esqueceu a senha?</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col"></div>
         </div>
       </div>
       <div class="menu-mobile" id="menu-mobile">
         <div class="row align-items-center justify-content-between">
-          <div class="col-auto"><a href="#footer"><img class="mx-2" src="./assets/images/HEADER/ICON-GLOBO2.svg">PT</a></div>
-          <div class="col-auto">
+          <div class="col-auto p-0"><a href="#footer"><img class="mx-2" src="./assets/images/HEADER/ICON-GLOBO2.svg">PT</a></div>
+          <div class="col-auto p-0">
             <button onclick="closeAll()"><img class="mx-2" src="./assets/images/HEADER/x-white.svg"></button>
           </div>
         </div>
-        <div class="row">
-          <div class="col"><img class="d-block m-auto" src="./assets/images/HEADER/logo-white.svg"></div>
-        </div>
-        <div class="row">
+        <div class="row flex-column">
           <div class="col">
-            <ul>
-              <li><a href="sobre.html">Sobre Nós</a></li>
-              <li><a href="servicos.html">Serviços</a></li>
-              <li><a href="artigos.html">Artigos e Notícias</a></li>
-              <li><a href="blogs.html">Blog</a></li>
-            </ul>
+            <div class="row">
+              <div class="col"><img class="d-block m-auto" src="./assets/images/HEADER/logo-white.svg"></div>
+            </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-12 my-3"><a class="d-flex gap-2 justify-content-center align-items-center" href="#" onclick="closeAll(); entrar(); openMobileLogin();"><img src="./assets/images/HEADER/person-blue.svg">ENTRAR</a></div>
-          <div class="col-12 text-center"><a class="button v3" href="#" onclick="closeAll(); start();">Começar agora</a></div>
+          <div class="col">
+            <div class="row">
+              <div class="col">
+                <ul>
+                  <li><a href="sobre.html">Sobre Nós</a></li>
+                  <li><a href="servicos.html">Serviços</a></li>
+                  <li><a href="artigos.html">Artigos e Notícias</a></li>
+                  <li><a href="blogs.html">Blog</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="row">
+              <div class="col-12 my-3"><a class="d-flex gap-2 justify-content-center align-items-center" href="#" onclick="closeAll(); entrar(); openMobileLogin();"><img src="./assets/images/HEADER/person-blue.svg">ENTRAR</a></div>
+              <div class="col-12 text-center"><a class="button v3" href="#" onclick="closeAll(); start();">Começar agora</a></div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="super-wrapper" id="cadastro">
@@ -125,7 +146,7 @@
                 <div class="col"><img class="d-block m-auto" src="./assets/images/HEADER/logo-white.svg"></div>
               </div>
             </div>
-            <div class="helper position-relative" style="padding: 30px">
+            <div class="helper position-relative" style="padding: 15px">
               <button class="x" onclick="closeAll()"><img src="./assets/images/LOGIN/x.svg "></button>
               <h1 class="color_blue1">Cadastro</h1>
               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda, deleniti?</p>
@@ -164,9 +185,9 @@
               <div class="selected-plan">
                 <div class="row justify-content-between align-items-center">
                   <div class="col-auto">
-                    <p class="text-start">Plano escolhido: <span id="span-plano">Sem plano selecionado</span></p>
+                    <p class="text-start">Plano escolhido: <span id="span-plano">-</span></p>
                   </div>
-                  <div class="col-auto"><a class="button outline2" href="index.html#plans" onclick="closeAll()" style="zoom: 0.7">Alterar</a></div>
+                  <div class="col-auto text-end"><a class="button outline2" href="index.html#plans" onclick="closeAll()" style="zoom: 0.7">Alterar</a></div>
                 </div>
               </div>
             </div>
@@ -295,7 +316,7 @@
         <div class="menu">
           <div class="center">
             <div class="row justify-content-between align-items-center">
-              <div class="col-sm-auto">
+              <div class="col-4">
                 <nav>
                   <ul>
                     <li><a href="index.html">Home</a></li>
@@ -304,8 +325,8 @@
                   </ul>
                 </nav>
               </div>
-              <div class="col-sm-auto"><a href="#"><img src="./assets/images/HEADER/logo.png" alt=""></a></div>
-              <div class="col-sm-auto">
+              <div class="col-4 text-center logo-footer"><a href="#"><img src="./assets/images/HEADER/LOGO.png" alt=""></a></div>
+              <div class="col-4 text-lg-end">
                 <div class="newsletter">
                   <form>
                     <input required type="email" placeholder="Seu e-mail">

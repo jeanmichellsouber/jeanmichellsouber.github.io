@@ -33,6 +33,11 @@ function entrar() {
   document.querySelector("#overlaybg").classList.add("--visible");
 }
 
+function showLanguagesList() {
+  document.querySelector("#list-language").classList.add("--visible");
+  document.querySelector("#overlaybg").classList.add("--visible");
+}
+
 function openMobileLogin() {
   document.querySelector("#login-mobile").classList.add("--visible");
 }
@@ -49,6 +54,11 @@ function start(plan) {
   }
 }
 
+function openPlan(plan) {
+  document.querySelector("#plan--" + plan).classList.add("--visible");
+  document.querySelector("#overlaybg").classList.add("--visible");
+}
+
 function prices() {
   var x = document.querySelectorAll(".--mensal, .--anual");
   x.forEach(function (e) {
@@ -62,6 +72,12 @@ function closeAll() {
   document.querySelector("#cadastro").classList.remove("--visible");
   document.querySelector("#login-mobile").classList.remove("--visible");
   document.querySelector("#menu-mobile").classList.remove("--visible");
+  document.querySelector("#list-language").classList.remove("--visible");
+
+  var x = document.querySelectorAll(".--destacado");
+  x.forEach(function (e) {
+    e.classList.remove("--visible");
+  });
 }
 
 document.addEventListener("keydown", function (e) {

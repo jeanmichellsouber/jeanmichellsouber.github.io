@@ -35,7 +35,13 @@
                     </div>
                   </div>
                   <div class="col-auto hide-on-mobile">
-                    <div class="language"><a class="d-flex" href="#footer"><img class="mx-2" src="./assets/images/HEADER/ICON-GLOBO.svg">PT</a></div>
+                    <div class="language position-relative"><a class="d-flex" href="#" onclick="closeAll(); showLanguagesList()"><img class="mx-2" src="./assets/images/HEADER/ICON-GLOBO.svg"><strong class="m-0">PT</strong></a>
+                      <ul class="list-language" id="list-language">
+                        <li><a href="#" title="Engligh">Eng</a></li>
+                        <li><a href="#" title="Deutsch">DE</a></li>
+                        <li><a href="#" title="Español">Esp</a></li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -48,7 +54,7 @@
                     </div>
                   </div>
                   <div class="col-auto hide-on-mobile">
-                    <div class="start-now"><a href="#" onclick="closeAll(); start();">COMEÇAR AGORA →</a></div>
+                    <div class="start-now"><a class="d-flex gap-2 align-items-center" href="#" onclick="closeAll(); start();">COMEÇAR AGORA<img src="./assets/images/HEADER/ICON-ARROW2.svg"></a></div>
                   </div>
                 </div>
               </div>
@@ -67,48 +73,63 @@
       </div>
       <div class="menu-mobile" id="login-mobile">
         <div class="row align-items-center justify-content-between">
-          <div class="col-auto"><a href="#footer"><img class="mx-2" src="./assets/images/HEADER/ICON-GLOBO2.svg">PT</a></div>
-          <div class="col-auto">
+          <div class="col-auto p-0"><a href="#footer"><img class="mx-2" src="./assets/images/HEADER/ICON-GLOBO2.svg">PT</a></div>
+          <div class="col-auto p-0">
             <button onclick="closeAll()"><img class="mx-2" src="./assets/images/HEADER/x-white.svg"></button>
           </div>
         </div>
-        <div class="row">
-          <div class="col"><img class="d-block m-auto" src="./assets/images/HEADER/logo-white.svg"></div>
-        </div>
-        <div class="row">
+        <div class="row flex-column">
           <div class="col">
-            <form>
-              <input class="w-100" required type="email" placeholder="E-mail">
-              <input class="w-100" required type="password" placeholder="Senha">
-              <input class="w-100" type="submit" value="Entrar">
-            </form>
-            <p class="text-center"><a href="#">Esqueceu a senha?</a></p>
+            <div class="row">
+              <div class="col"><img class="d-block m-auto" src="./assets/images/HEADER/logo-white.svg"></div>
+            </div>
           </div>
+          <div class="col">
+            <div class="row">
+              <div class="col">
+                <form>
+                  <input class="w-100" required type="email" placeholder="E-mail">
+                  <input class="w-100" required type="password" placeholder="Senha">
+                  <input class="w-100" type="submit" value="Entrar">
+                </form>
+                <p class="text-center m-0"><a href="#">Esqueceu a senha?</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col"></div>
         </div>
       </div>
       <div class="menu-mobile" id="menu-mobile">
         <div class="row align-items-center justify-content-between">
-          <div class="col-auto"><a href="#footer"><img class="mx-2" src="./assets/images/HEADER/ICON-GLOBO2.svg">PT</a></div>
-          <div class="col-auto">
+          <div class="col-auto p-0"><a href="#footer"><img class="mx-2" src="./assets/images/HEADER/ICON-GLOBO2.svg">PT</a></div>
+          <div class="col-auto p-0">
             <button onclick="closeAll()"><img class="mx-2" src="./assets/images/HEADER/x-white.svg"></button>
           </div>
         </div>
-        <div class="row">
-          <div class="col"><img class="d-block m-auto" src="./assets/images/HEADER/logo-white.svg"></div>
-        </div>
-        <div class="row">
+        <div class="row flex-column">
           <div class="col">
-            <ul>
-              <li><a href="sobre.html">Sobre Nós</a></li>
-              <li><a href="servicos.html">Serviços</a></li>
-              <li><a href="artigos.html">Artigos e Notícias</a></li>
-              <li><a href="blogs.html">Blog</a></li>
-            </ul>
+            <div class="row">
+              <div class="col"><img class="d-block m-auto" src="./assets/images/HEADER/logo-white.svg"></div>
+            </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-12 my-3"><a class="d-flex gap-2 justify-content-center align-items-center" href="#" onclick="closeAll(); entrar(); openMobileLogin();"><img src="./assets/images/HEADER/person-blue.svg">ENTRAR</a></div>
-          <div class="col-12 text-center"><a class="button v3" href="#" onclick="closeAll(); start();">Começar agora</a></div>
+          <div class="col">
+            <div class="row">
+              <div class="col">
+                <ul>
+                  <li><a href="sobre.html">Sobre Nós</a></li>
+                  <li><a href="servicos.html">Serviços</a></li>
+                  <li><a href="artigos.html">Artigos e Notícias</a></li>
+                  <li><a href="blogs.html">Blog</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="row">
+              <div class="col-12 my-3"><a class="d-flex gap-2 justify-content-center align-items-center" href="#" onclick="closeAll(); entrar(); openMobileLogin();"><img src="./assets/images/HEADER/person-blue.svg">ENTRAR</a></div>
+              <div class="col-12 text-center"><a class="button v3" href="#" onclick="closeAll(); start();">Começar agora</a></div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="super-wrapper" id="cadastro">
@@ -125,7 +146,7 @@
                 <div class="col"><img class="d-block m-auto" src="./assets/images/HEADER/logo-white.svg"></div>
               </div>
             </div>
-            <div class="helper position-relative" style="padding: 30px">
+            <div class="helper position-relative" style="padding: 15px">
               <button class="x" onclick="closeAll()"><img src="./assets/images/LOGIN/x.svg "></button>
               <h1 class="color_blue1">Cadastro</h1>
               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda, deleniti?</p>
@@ -164,9 +185,9 @@
               <div class="selected-plan">
                 <div class="row justify-content-between align-items-center">
                   <div class="col-auto">
-                    <p class="text-start">Plano escolhido: <span id="span-plano">Sem plano selecionado</span></p>
+                    <p class="text-start">Plano escolhido: <span id="span-plano">-</span></p>
                   </div>
-                  <div class="col-auto"><a class="button outline2" href="index.html#plans" onclick="closeAll()" style="zoom: 0.7">Alterar</a></div>
+                  <div class="col-auto text-end"><a class="button outline2" href="index.html#plans" onclick="closeAll()" style="zoom: 0.7">Alterar</a></div>
                 </div>
               </div>
             </div>
@@ -175,23 +196,32 @@
       </div>
       <section class="presentation viewport-height position-relative">
         <div class="center text-center" data-aos="fade">
-          <h1>Inteligência Artificial para Marketing</h1>
-          <div class="row w-75 m-auto py-5 align-items-center top-icons">
-            <div class="col"><img class="my-3" src="./assets/images/HEADER/ICON-PLANO.svg" alt="">
-              <p>Escolha um plano</p>
+          <div class="row flex-column">
+            <div class="col"></div>
+            <div class="col">
+              <h1>Inteligência Artificial para Marketing</h1>
+              <div class="row w-75 m-auto py-5 align-items-center top-icons">
+                <div class="col"><img class="my-3" src="./assets/images/HEADER/ICON-PLANO.svg" alt="">
+                  <p>Escolha um plano</p>
+                </div>
+                <div class="col"><img class="arrows" src="./assets/images/HEADER/ICON-ARROW.svg" alt=""></div>
+                <div class="col"><img class="my-3" src="./assets/images/HEADER/ICON-CADASTRO.svg" alt="">
+                  <p>Faça seu cadastro</p>
+                </div>
+                <div class="col"><img class="arrows" src="./assets/images/HEADER/ICON-ARROW.svg" alt=""></div>
+                <div class="col"><img class="my-3" src="./assets/images/HEADER/ICON-RELATORIO.svg" alt="">
+                  <p>Receba seu relatório</p>
+                </div>
+              </div>
             </div>
-            <div class="col"><img class="arrows" src="./assets/images/HEADER/ICON-ARROW.svg" alt=""></div>
-            <div class="col"><img class="my-3" src="./assets/images/HEADER/ICON-CADASTRO.svg" alt="">
-              <p>Faça seu cadastro</p>
+            <div class="col">
+              <div class="d-flex h-100 w-100 align-items-end">
+                <div class="row justify-content-between align-items-center py-5 w-100 m-0">
+                  <div class="col-sm-auto"><a class="button v2" href="#">descobrir mais</a></div>
+                  <div class="col-sm-auto"><a class="button v3 d-flex gap-3" href="#plans">escolha seu plano<img src="./assets/images/HEADER/arrowdown.svg"></a></div>
+                </div>
+              </div>
             </div>
-            <div class="col"><img class="arrows" src="./assets/images/HEADER/ICON-ARROW.svg" alt=""></div>
-            <div class="col"><img class="my-3" src="./assets/images/HEADER/ICON-RELATORIO.svg" alt="">
-              <p>Receba seu relatório</p>
-            </div>
-          </div>
-          <div class="row justify-content-between align-items-center py-5">
-            <div class="col-sm-auto"><a class="button v2" href="#">descobrir mais</a></div>
-            <div class="col-sm-auto"><a class="button v3 d-flex gap-3" href="#plans">escolha seu plano<img src="./assets/images/HEADER/arrowdown.svg"></a></div>
           </div>
         </div>
       </section>
@@ -200,6 +230,9 @@
           <div class="row align-items-center">
             <div class="col" data-aos="fade">
               <div class="video">
+                <div class="bg-gradient2"></div>
+                <div class="blur1"></div>
+                <div class="blur2"></div>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/dWL0jvj1PJw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
               </div>
             </div>
@@ -328,12 +361,12 @@
             <div class="col-auto">
               <div class="text-end py-5">
                 <label class="d-flex float-end gap-3">
-                  <p>Mensal					</p>
+                  <p>Mensal</p>
                   <input class="input-switch" type="checkbox" id="check-mensal-anual" onchange="prices()">
                   <div class="switch">
                     <div class="dragger"></div>
                   </div>
-                  <p>Anual				</p>
+                  <p>Anual</p>
                 </label>
               </div>
             </div>
@@ -348,7 +381,18 @@
                   <li class="d-flex gap-3"><img src="./assets/images/BODY/ICON-CHECK-PLANOS.svg" alt="">Tipo de vantagem</li>
                   <li class="d-flex gap-3 --disabled"><img src="./assets/images/BODY/ICON-CHECK-PLANOS.svg" alt="">Tipo de vantagem</li>
                   <li class="d-flex gap-3 --disabled"><img src="./assets/images/BODY/ICON-CHECK-PLANOS.svg" alt="">Tipo de vantagem</li>
-                </ul><a class="button v2" href="#" onclick="closeAll(); start('Basic')">Quero esse plano</a>
+                </ul><a class="button v2 my-3 descobrir" href="#findOut" onclick="closeAll(); openPlan('0')">Descobrir mais</a><a class="button v2" href="#" onclick="closeAll(); start('Basic')">Quero esse plano</a>
+              </article>
+              <article class="--destacado text-center" id="plan--0">
+                <button class="closeit" onclick="closeAll()"><img class="mx-2" src="./assets/images/HEADER/x-white.svg"></button><span class="small">Basic</span><span class="bigger --mensal --visible">R$ 100</span><span class="bigger --anual">R$ 500</span><small>por usuário/mês</small>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor </p>
+                <hr>
+                <ul>
+                  <li class="d-flex gap-3"><img src="./assets/images/BODY/ICON-CHECK-PLANOS.svg" alt="">Tipo de vantagem</li>
+                  <li class="d-flex gap-3"><img src="./assets/images/BODY/ICON-CHECK-PLANOS.svg" alt="">Tipo de vantagem</li>
+                  <li class="d-flex gap-3 --disabled"><img src="./assets/images/BODY/ICON-CHECK-PLANOS.svg" alt="">Tipo de vantagem</li>
+                  <li class="d-flex gap-3 --disabled"><img src="./assets/images/BODY/ICON-CHECK-PLANOS.svg" alt="">Tipo de vantagem</li>
+                </ul><a class="button v2" href="#" onclick="closeAll(); start('Basic')" style="background: #fff; color: #2e026e">Quero esse plano							</a>
               </article>
             </div>
             <div class="col">
@@ -360,7 +404,18 @@
                   <li class="d-flex gap-3"><img src="./assets/images/BODY/ICON-CHECK-PLANOS.svg" alt="">Tipo de vantagem</li>
                   <li class="d-flex gap-3 --disabled"><img src="./assets/images/BODY/ICON-CHECK-PLANOS.svg" alt="">Tipo de vantagem</li>
                   <li class="d-flex gap-3 --disabled"><img src="./assets/images/BODY/ICON-CHECK-PLANOS.svg" alt="">Tipo de vantagem</li>
-                </ul><a class="button v2" href="#" onclick="closeAll(); start('Light')">Quero esse plano</a>
+                </ul><a class="button v2 my-3 descobrir" href="#findOut" onclick="closeAll(); openPlan('1')">Descobrir mais</a><a class="button v2" href="#" onclick="closeAll(); start('Light')">Quero esse plano</a>
+              </article>
+              <article class="--destacado text-center" id="plan--1">
+                <button class="closeit" onclick="closeAll()"><img class="mx-2" src="./assets/images/HEADER/x-white.svg"></button><span class="small">Light</span><span class="bigger --mensal --visible">R$ 100</span><span class="bigger --anual">R$ 500</span><small>por usuário/mês</small>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor </p>
+                <hr>
+                <ul>
+                  <li class="d-flex gap-3"><img src="./assets/images/BODY/ICON-CHECK-PLANOS.svg" alt="">Tipo de vantagem</li>
+                  <li class="d-flex gap-3"><img src="./assets/images/BODY/ICON-CHECK-PLANOS.svg" alt="">Tipo de vantagem</li>
+                  <li class="d-flex gap-3 --disabled"><img src="./assets/images/BODY/ICON-CHECK-PLANOS.svg" alt="">Tipo de vantagem</li>
+                  <li class="d-flex gap-3 --disabled"><img src="./assets/images/BODY/ICON-CHECK-PLANOS.svg" alt="">Tipo de vantagem</li>
+                </ul><a class="button v2" href="#" onclick="closeAll(); start('Light')" style="background: #fff; color: #2e026e">Quero esse plano							</a>
               </article>
             </div>
             <div class="col">
@@ -372,7 +427,18 @@
                   <li class="d-flex gap-3"><img src="./assets/images/BODY/ICON-CHECK-PLANOS.svg" alt="">Tipo de vantagem</li>
                   <li class="d-flex gap-3 --disabled"><img src="./assets/images/BODY/ICON-CHECK-PLANOS.svg" alt="">Tipo de vantagem</li>
                   <li class="d-flex gap-3 --disabled"><img src="./assets/images/BODY/ICON-CHECK-PLANOS.svg" alt="">Tipo de vantagem</li>
-                </ul><a class="button v2" href="#" onclick="closeAll(); start('PRO')">Quero esse plano</a>
+                </ul><a class="button v2 my-3 descobrir" href="#findOut" onclick="closeAll(); openPlan('2')">Descobrir mais</a><a class="button v2" href="#" onclick="closeAll(); start('PRO')">Quero esse plano</a>
+              </article>
+              <article class="--destacado text-center --highlight" id="plan--2">
+                <button class="closeit" onclick="closeAll()"><img class="mx-2" src="./assets/images/HEADER/x-white.svg"></button><span class="small">PRO</span><span class="bigger --mensal --visible">R$ 100</span><span class="bigger --anual">R$ 500</span><small>por usuário/mês</small>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor </p>
+                <hr>
+                <ul>
+                  <li class="d-flex gap-3"><img src="./assets/images/BODY/ICON-CHECK-PLANOS.svg" alt="">Tipo de vantagem</li>
+                  <li class="d-flex gap-3"><img src="./assets/images/BODY/ICON-CHECK-PLANOS.svg" alt="">Tipo de vantagem</li>
+                  <li class="d-flex gap-3 --disabled"><img src="./assets/images/BODY/ICON-CHECK-PLANOS.svg" alt="">Tipo de vantagem</li>
+                  <li class="d-flex gap-3 --disabled"><img src="./assets/images/BODY/ICON-CHECK-PLANOS.svg" alt="">Tipo de vantagem</li>
+                </ul><a class="button v2" href="#" onclick="closeAll(); start('PRO')" style="background: #fff; color: #2e026e">Quero esse plano							</a>
               </article>
             </div>
             <div class="col">
@@ -384,17 +450,28 @@
                   <li class="d-flex gap-3"><img src="./assets/images/BODY/ICON-CHECK-PLANOS.svg" alt="">Tipo de vantagem</li>
                   <li class="d-flex gap-3 --disabled"><img src="./assets/images/BODY/ICON-CHECK-PLANOS.svg" alt="">Tipo de vantagem</li>
                   <li class="d-flex gap-3 --disabled"><img src="./assets/images/BODY/ICON-CHECK-PLANOS.svg" alt="">Tipo de vantagem</li>
-                </ul><a class="button v2" href="#" onclick="closeAll(); start('Consultivo')">Quero esse plano</a>
+                </ul><a class="button v2 my-3 descobrir" href="#findOut" onclick="closeAll(); openPlan('3')">Descobrir mais</a><a class="button v2" href="#" onclick="closeAll(); start('Consultivo')">Quero esse plano</a>
+              </article>
+              <article class="--destacado text-center" id="plan--3">
+                <button class="closeit" onclick="closeAll()"><img class="mx-2" src="./assets/images/HEADER/x-white.svg"></button><span class="small">Consultivo</span><span class="bigger --mensal --visible">R$ 100</span><span class="bigger --anual">R$ 500</span><small>por usuário/mês</small>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor </p>
+                <hr>
+                <ul>
+                  <li class="d-flex gap-3"><img src="./assets/images/BODY/ICON-CHECK-PLANOS.svg" alt="">Tipo de vantagem</li>
+                  <li class="d-flex gap-3"><img src="./assets/images/BODY/ICON-CHECK-PLANOS.svg" alt="">Tipo de vantagem</li>
+                  <li class="d-flex gap-3 --disabled"><img src="./assets/images/BODY/ICON-CHECK-PLANOS.svg" alt="">Tipo de vantagem</li>
+                  <li class="d-flex gap-3 --disabled"><img src="./assets/images/BODY/ICON-CHECK-PLANOS.svg" alt="">Tipo de vantagem</li>
+                </ul><a class="button v2" href="#" onclick="closeAll(); start('Consultivo')" style="background: #fff; color: #2e026e">Quero esse plano							</a>
               </article>
             </div>
           </div>
-          <div class="d-flex align-items-center gap-3 py-5"><img src="./assets/images/BODY/icon-lockpad.svg" alt="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vulputate lacinia rhoncus.</div>
+          <div class="d-flex align-items-center gap-3 py-5 advise"><img src="./assets/images/BODY/icon-lockpad.svg" alt="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vulputate lacinia rhoncus.</div>
         </div>
       </section>
       <section class="descriptions padding">
         <div class="center">
           <div class="row">
-            <div class="col-4 pb-5 px-4">
+            <div class="col-4 pb-5 px-4" data-aos="fade-up">
               <article>
                 <div class="row">
                   <div class="col-2"><img src="./assets/images/BODY/ICON-REDE-LEXICAL.png" alt=""></div>
@@ -405,7 +482,7 @@
                 </div>
               </article>
             </div>
-            <div class="col-4 pb-5 px-4">
+            <div class="col-4 pb-5 px-4" data-aos="fade-up">
               <article>
                 <div class="row">
                   <div class="col-2"><img src="./assets/images/BODY/ICON-INSIGHTS.png" alt=""></div>
@@ -416,7 +493,7 @@
                 </div>
               </article>
             </div>
-            <div class="col-4 pb-5 px-4">
+            <div class="col-4 pb-5 px-4" data-aos="fade-up">
               <article>
                 <div class="row">
                   <div class="col-2"><img src="./assets/images/BODY/ICON-ANALISE.png" alt=""></div>
@@ -427,7 +504,7 @@
                 </div>
               </article>
             </div>
-            <div class="col-4 pb-5 px-4">
+            <div class="col-4 pb-5 px-4" data-aos="fade-up">
               <article>
                 <div class="row">
                   <div class="col-2"><img src="./assets/images/BODY/ICON-SOCIAL-BUYIER.png" alt=""></div>
@@ -438,7 +515,7 @@
                 </div>
               </article>
             </div>
-            <div class="col-4 pb-5 px-4">
+            <div class="col-4 pb-5 px-4" data-aos="fade-up">
               <article>
                 <div class="row">
                   <div class="col-2"><img src="./assets/images/BODY/ICON-PERFIL.png" alt=""></div>
@@ -449,7 +526,7 @@
                 </div>
               </article>
             </div>
-            <div class="col-4 pb-5 px-4">
+            <div class="col-4 pb-5 px-4" data-aos="fade-up">
               <article>
                 <div class="row">
                   <div class="col-2"><img src="./assets/images/BODY/ICON-SAUDE.png" alt=""></div>
@@ -556,7 +633,7 @@
         <div class="menu">
           <div class="center">
             <div class="row justify-content-between align-items-center">
-              <div class="col-sm-auto">
+              <div class="col-4">
                 <nav>
                   <ul>
                     <li><a href="index.html">Home</a></li>
@@ -565,8 +642,8 @@
                   </ul>
                 </nav>
               </div>
-              <div class="col-sm-auto"><a href="#"><img src="./assets/images/HEADER/logo.png" alt=""></a></div>
-              <div class="col-sm-auto">
+              <div class="col-4 text-center logo-footer"><a href="#"><img src="./assets/images/HEADER/LOGO.png" alt=""></a></div>
+              <div class="col-4 text-lg-end">
                 <div class="newsletter">
                   <form>
                     <input required type="email" placeholder="Seu e-mail">
