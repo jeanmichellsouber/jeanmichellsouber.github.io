@@ -249,7 +249,8 @@ header .start-now a {
 
 @media all and (min-width: 1080px) {
   .balloon-login.cadastro {
-    margin-top: 70px;
+    margin-top: 15vh;
+    max-height: 70vh;
   }
 }
 @media all and (max-width: 1080px) {
@@ -1528,4 +1529,8 @@ label {
 
 .list-language li a:hover {
   color: #a0f1f2;
+}
+
+.login, .start-now {
+  font-size: 14px;
 }
