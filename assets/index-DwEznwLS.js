@@ -136,7 +136,6 @@ Please change the parent <Route path="${b}"> to <Route path="${b==="/"?"*":`${b}
   .accordion-header {
     margin: 0;
     position: sticky;
-    z-index: 1;
     top: 0;
     .accordion-trigger {
       display: flex;
