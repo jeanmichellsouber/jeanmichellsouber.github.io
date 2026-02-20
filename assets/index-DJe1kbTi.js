@@ -244,7 +244,7 @@ Please change the parent <Route path="${b}"> to <Route path="${b==="/"?"*":`${b}
   }
 `;function Pq(e){return mn({attr:{viewBox:"0 0 512 512"},child:[{tag:"path",attr:{d:"M256 294.1L383 167c9.4-9.4 24.6-9.4 33.9 0s9.3 24.6 0 34L273 345c-9.1 9.1-23.7 9.3-33.1.7L95 201.1c-4.7-4.7-7-10.9-7-17s2.3-12.3 7-17c9.4-9.4 24.6-9.4 33.9 0l127.1 127z"},child:[]}]})(e)}function Eq(e){return mn({attr:{viewBox:"0 0 512 512"},child:[{tag:"path",attr:{d:"M294.1 256L167 129c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.3 34 0L345 239c9.1 9.1 9.3 23.7.7 33.1L201.1 417c-4.7 4.7-10.9 7-17 7s-12.3-2.3-17-7c-9.4-9.4-9.4-24.6 0-33.9l127-127.1z"},child:[]}]})(e)}function Rq(e){return mn({attr:{viewBox:"0 0 512 512"},child:[{tag:"path",attr:{d:"M96 235h320v42H96z"},child:[]}]})(e)}function Dq(e){return mn({attr:{viewBox:"0 0 512 512"},child:[{tag:"rect",attr:{width:"336",height:"336",x:"128",y:"128",fill:"none",strokeLinejoin:"round",strokeWidth:"32",rx:"57",ry:"57"},child:[]},{tag:"path",attr:{fill:"none",strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:"32",d:"m383.5 128 .5-24a56.16 56.16 0 0 0-56-56H112a64.19 64.19 0 0 0-64 64v216a56.16 56.16 0 0 0 56 56h24m168-168v160m80-80H216"},child:[]}]})(e)}function Tq(e){return mn({attr:{viewBox:"0 0 24 24",fill:"none",stroke:"currentColor",strokeWidth:"2",strokeLinecap:"round",strokeLinejoin:"round"},child:[{tag:"path",attr:{d:"M12 20h9"},child:[]},{tag:"path",attr:{d:"M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"},child:[]}]})(e)}function jq(e){return mn({attr:{viewBox:"0 0 1024 1024"},child:[{tag:"path",attr:{d:"M112 476h160v72H112zm320 0h160v72H432zm320 0h160v72H752z"},child:[]}]})(e)}function Nq(e){return mn({attr:{viewBox:"0 0 1024 1024"},child:[{tag:"path",attr:{d:"M360 184h-8c4.4 0 8-3.6 8-8v8h304v-8c0 4.4 3.6 8 8 8h-8v72h72v-80c0-35.3-28.7-64-64-64H352c-35.3 0-64 28.7-64 64v80h72v-72zm504 72H160c-17.7 0-32 14.3-32 32v32c0 4.4 3.6 8 8 8h60.4l24.7 523c1.6 34.1 29.8 61 63.9 61h454c34.2 0 62.3-26.8 63.9-61l24.7-523H888c4.4 0 8-3.6 8-8v-32c0-17.7-14.3-32-32-32zM731.3 840H292.7l-24.2-512h487l-24.2 512z"},child:[]}]})(e)}const Mq=({children:e,headerTitle:t,value:n,id:a,deleteSpecificFn:r,duplicateFn:l,editSpecificFn:c})=>{const{contextState:d}=li();return q.jsxs(Oq,{value:n,theme:d.theme,children:[q.jsxs(WG,{children:[q.jsx(QG,{children:q.jsx(iH,{className:"accordion-header",title:"Right click for actions",children:q.jsx(lH,{className:"accordion-trigger",children:q.jsxs(q.Fragment,{children:[q.jsxs("div",{className:"wrapper-header-content",children:[q.jsx("span",{className:"draggable-handle",children:q.jsx(PF,{})}),q.jsx("span",{className:"title-of-the-group",children:t})]}),q.jsx(Pq,{})]})})})}),q.jsxs(eq,{className:"context-menu",children:[q.jsxs(Iy,{className:"context-menu-item",onSelect:()=>{c(a)},children:[q.jsx("span",{children:"Edit group"}),q.jsx(Tq,{})]}),q.jsxs(Iy,{className:"context-menu-item",onSelect:()=>{l(a)},children:[q.jsx("span",{children:"Duplicate group"}),q.jsx(Dq,{})]}),q.jsx(tq,{className:"context-menu-separator"}),q.jsxs(Iy,{className:"context-menu-item delete",onSelect:()=>{r(a)},children:[q.jsx("span",{children:"Delete group"}),q.jsx(Nq,{})]})]})]}),q.jsx(sH,{className:"accordion-content",children:q.jsx("div",{children:e})})]})},m2=qw`
   background: ${e=>e.theme==="dark"?"#252525":"#fff"};
-  height: 35px;
+  height: 40px;
   display: flex;
   width: 100%;
   align-items: center;
@@ -255,7 +255,7 @@ Please change the parent <Route path="${b}"> to <Route path="${b==="/"?"*":`${b}
   text-align: left;
   overflow: hidden;
   padding: 0 18px 0 0;
-  margin-bottom: 5px;
+  // margin-bottom: 5px;
   & > div {
     display: flex;
     align-items: center;
@@ -287,7 +287,7 @@ Please change the parent <Route path="${b}"> to <Route path="${b==="/"?"*":`${b}
   }
 
   .hint {
-    font-size: 8px;
+    font-size: 9px;
     letter-spacing: 1px;
     text-transform: uppercase;
     display: block;
@@ -300,7 +300,7 @@ Please change the parent <Route path="${b}"> to <Route path="${b==="/"?"*":`${b}
     color: ${e=>e.theme==="dark"?"#fff":"#111"};
     font-weight: 500;
     font-family: 'Courier New', serif !important;
-    font-size: 14px;
+    font-size: 15px;
     max-width: calc(100% - 45px);
     white-space: nowrap;
     overflow: hidden;
