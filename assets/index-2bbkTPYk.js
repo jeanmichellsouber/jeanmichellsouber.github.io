@@ -25,7 +25,7 @@ Error generating stack: `+f.message+`
       background-color: red;
     }
   }
-`,T7=({options:e,...t})=>q.jsx(D7,{...t,children:e.map(n=>q.jsx("option",{value:n.value,selected:n.selected,children:n.label},n.value))}),td=(e,t)=>e.trim().toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"").replace(/[^a-z0-9]+/g,t).replace(/^[-]+|[-]+$/g,""),IA=e=>{navigator.clipboard.writeText(e).catch(t=>{console.error("Could not copy text: ",t)})},nw=60,j7=Ea.header`
+`,T7=({options:e,...t})=>q.jsx(D7,{defaultValue:e.find(n=>n.selected)?.value,...t,children:e.map(n=>q.jsx("option",{value:n.value,children:n.label},n.value))}),td=(e,t)=>e.trim().toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"").replace(/[^a-z0-9]+/g,t).replace(/^[-]+|[-]+$/g,""),IA=e=>{navigator.clipboard.writeText(e).catch(t=>{console.error("Could not copy text: ",t)})},nw=60,j7=Ea.header`
   height: ${nw}px;
   width: 100%;
   display: flex;
